@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.maincont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding-top: 30px;
+    background-color: rgb(244, 250, 255);
+}
+.heading{
+    width: 300px;
+    height: 50px;
+    border: 3px solid goldenrod;
+    background-color: black;
+    color: rgb(242, 180, 25);
+    padding: 3px 0px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 480px;
+    /* border: 1px solid black; */
+    
+}
+.buttons button{
+    width: 90px;
+    background-color: transparent;
+    color: rgb(109, 51, 10);
+    cursor: pointer;
+    border: 2px solid goldenrod;
+    font-weight: 600;
+    transition: 0.5s all ease;
+}
+.buttons button:active{
+    /* background-color: goldenrod;
+    color: black; */
+    transform: scale(0.9);
+}
+.buttons button:hover{
+    background-color: goldenrod;
+    color: rgb(109, 51, 10);
+    font-weight: 600;
+}
+.menuBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    padding-left: 140px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+}
+.menuitems{
+    display: flex;
+    gap: 15px;
+    width: 500px;
+    height: 210px;
+    /* border:  1px solid black; */
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.image img{
+    width: 200px;
+    height: 180px;
+    border: 4px solid rgb(255, 217, 0);
+}
+.para{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price{
+    color: goldenrod;
+    font-weight: 600;
+}
+
+@media(min-width: 1024px) and (max-width: 1200px){
+    .menuBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+    }
+    .menuitems{
+        display: flex;
+        gap: 15px;
+        width: 480px;
+        height: 190px;
+        /* border:  1px solid black; */
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+}
+@media(min-width: 768px) and (max-width: 978px){
+    .menuBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        padding-left: 150px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+    }
+    .menuitems{
+        display: flex;
+        gap: 15px;
+        width: 430px;
+        height: 180px;
+        /* border:  1px solid black; */
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    .image img{
+        width: 180px;
+        height: 170px;
+        border: 4px solid rgb(255, 217, 0);
+    }
+    .para{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .desc{
+        font-size: 14px;
+    }
+}
+@media(min-width: 320px) and (max-width: 430px){
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        width: 300px;
+        height: 50px;
+        /* border: 1px solid black; */
+        
+    }
+    .menuBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        padding-left: 0px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        /* border: 1px solid red; */
+    }
+    .menuitems{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        height: 160px;
+        /* border:  1px solid black; */
+        margin-bottom: 0px;
+        margin-left: 10px;
+    }
+    .image img{
+        width: 120px;
+        height: 140px;
+        border: 4px solid rgb(255, 217, 0);
+        margin-top: 10px;
+    }
+    .para{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .desc{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 24px;
+    }
+}
